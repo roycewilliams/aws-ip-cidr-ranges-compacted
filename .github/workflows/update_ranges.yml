@@ -14,9 +14,13 @@ jobs:
       contents: write # This grants write access to the repository content
 
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         # This action checks out your repository under $GITHUB_WORKSPACE.
         uses: actions/checkout@v4
+
+      - name: Pull latest changes
+        run: |
+          git pull --rebase origin main
 
       - name: Set up Python
         # This action sets up the Python environment.
@@ -44,4 +48,5 @@ jobs:
           file_pattern: ip-ranges-compacted.json
           # Rebase before pushing changes.
           pull_strategy: "rebase"
+          push_options: "--force"
 
