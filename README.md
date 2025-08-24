@@ -1,4 +1,4 @@
-Pulls AWS IP ranges, and provides a CIDR-summarized list. Runs daily.
+Pulls Amazon's published JSON list of AWS IP ranges once a day, and converts them to a CIDR-summarized list.
 
 Simple example:
 
