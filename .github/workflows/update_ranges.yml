@@ -47,6 +47,5 @@ jobs:
           # Only commit if the 'ip-ranges-compacted.json' file has changed.
           file_pattern: ip-ranges-compacted.json
           # Rebase before pushing changes.
-          pull_strategy: "rebase"
           push_options: "--force"
 
