@@ -76,6 +76,11 @@ def main():
     if not raw_data:
         sys.exit(1)
 
+    # Write the original AWS data to a JSON file.
+    with open("ip-ranges-original.json", "w") as f:
+        json.dump(raw_data, f, indent=2)
+    print("Successfully created ip-ranges-original.json")
+
     # Extract IPv4 prefixes from the 'prefixes' key.
     ipv4_prefixes = [p['ip_prefix'] for p in raw_data.get('prefixes', [])]
 
