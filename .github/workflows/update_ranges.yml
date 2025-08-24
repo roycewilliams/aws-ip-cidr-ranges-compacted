@@ -44,3 +44,4 @@ jobs:
           file_pattern: ip-ranges-compacted.json
           # Rebase before pushing changes.
           pull_strategy: "rebase"
+
