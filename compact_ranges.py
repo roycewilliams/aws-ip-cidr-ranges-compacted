@@ -92,12 +92,28 @@ def main():
     # Coalesce the IPv6 prefixes.
     coalesced_ipv6 = coalesce_prefixes(ipv6_prefixes, 6)
 
-    # Prepare the output dictionary.
+    # Prepare the output dictionary in the same format as the original.
     output_data = {
-        'creationDate': raw_data.get('createDate'),
         'syncToken': raw_data.get('syncToken'),
-        'ipv4_prefixes': sorted([str(n) for n in coalesced_ipv4]),
-        'ipv6_prefixes': sorted([str(n) for n in coalesced_ipv6])
+        'createDate': raw_data.get('createDate'),
+        'prefixes': [
+            {
+                'ip_prefix': str(n),
+                'region': 'other',
+                'service': 'OTHER',
+                'network_border_group': 'other'
+            }
+            for n in sorted(coalesced_ipv4)
+        ],
+        'ipv6_prefixes': [
+            {
+                'ipv6_prefix': str(n),
+                'region': 'other',
+                'service': 'OTHER',
+                'network_border_group': 'other'
+            }
+            for n in sorted(coalesced_ipv6)
+        ]
     }
 
     # Write the compacted data to a JSON file.
@@ -111,3 +127,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
