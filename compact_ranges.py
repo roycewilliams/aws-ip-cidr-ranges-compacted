@@ -3,7 +3,9 @@
 import json
 import requests
 import sys
-from ipaddress import IPv4Network, IPv6Network, collapse_addresses
+from ipaddress import IPv4Network, IPv6Network, collapse_addresses, ip_network
+from collections import defaultdict
+from datetime import datetime
 
 # This script fetches the AWS IP ranges, extracts the IPv4 and IPv6 prefixes,
 # and then coalesces them into the most compact representation possible.
@@ -65,6 +67,200 @@ def coalesce_prefixes(prefixes, ip_version):
     # Use the collapse_addresses function to merge the networks.
     return list(collapse_addresses(networks))
 
+def coalesce_with_metadata(prefixes_data, ip_version):
+    """
+    Coalesces IP prefixes while preserving metadata where possible.
+    
+    Args:
+        prefixes_data (list): List of dictionaries containing prefix and metadata
+        ip_version (int): IP version (4 or 6)
+    
+    Returns:
+        list: List of dictionaries with coalesced prefixes and appropriate metadata
+    """
+    # Group prefixes by their metadata
+    grouped = defaultdict(list)
+    prefix_key = 'ip_prefix' if ip_version == 4 else 'ipv6_prefix'
+    
+    for entry in prefixes_data:
+        metadata_key = (
+            entry.get('region', 'other'),
+            entry.get('service', 'OTHER'),
+            entry.get('network_border_group', 'other')
+        )
+        grouped[metadata_key].append(entry[prefix_key])
+    
+    # Coalesce within each metadata group
+    result = []
+    networks_with_metadata = []
+    
+    for (region, service, nbg), prefixes in grouped.items():
+        coalesced = coalesce_prefixes(prefixes, ip_version)
+        for network in coalesced:
+            networks_with_metadata.append({
+                'network': network,
+                'region': region,
+                'service': service,
+                'network_border_group': nbg
+            })
+    
+    # Check for overlaps between different metadata groups
+    # and merge with "other" metadata if networks can be combined
+    processed = []
+    skip_indices = set()
+    
+    for i, entry1 in enumerate(networks_with_metadata):
+        if i in skip_indices:
+            continue
+            
+        can_merge = []
+        for j, entry2 in enumerate(networks_with_metadata[i+1:], start=i+1):
+            if j in skip_indices:
+                continue
+            
+            # Check if networks are adjacent or overlapping
+            if entry1['network'].overlaps(entry2['network']) or \
+               entry1['network'].supernet_of(entry2['network']) or \
+               entry2['network'].supernet_of(entry1['network']):
+                can_merge.append(j)
+                skip_indices.add(j)
+        
+        if can_merge:
+            # Merge networks with different metadata
+            networks_to_merge = [entry1['network']]
+            metadata_matches = True
+            
+            for idx in can_merge:
+                networks_to_merge.append(networks_with_metadata[idx]['network'])
+                if (networks_with_metadata[idx]['region'] != entry1['region'] or
+                    networks_with_metadata[idx]['service'] != entry1['service'] or
+                    networks_with_metadata[idx]['network_border_group'] != entry1['network_border_group']):
+                    metadata_matches = False
+            
+            merged = list(collapse_addresses(networks_to_merge))
+            for network in merged:
+                if metadata_matches:
+                    processed.append({
+                        'network': network,
+                        'region': entry1['region'],
+                        'service': entry1['service'],
+                        'network_border_group': entry1['network_border_group']
+                    })
+                else:
+                    processed.append({
+                        'network': network,
+                        'region': 'other',
+                        'service': 'OTHER',
+                        'network_border_group': 'other'
+                    })
+        else:
+            processed.append(entry1)
+    
+    # Convert to final format
+    for entry in processed:
+        if ip_version == 4:
+            result.append({
+                'ip_prefix': str(entry['network']),
+                'region': entry['region'],
+                'service': entry['service'],
+                'network_border_group': entry['network_border_group']
+            })
+        else:
+            result.append({
+                'ipv6_prefix': str(entry['network']),
+                'region': entry['region'],
+                'service': entry['service'],
+                'network_border_group': entry['network_border_group']
+            })
+    
+    # Sort by network address
+    if ip_version == 4:
+        result.sort(key=lambda x: IPv4Network(x['ip_prefix']))
+    else:
+        result.sort(key=lambda x: IPv6Network(x['ipv6_prefix']))
+    
+    return result
+
+def write_txt_file(data, filename, description):
+    """
+    Extract all CIDR blocks and write to text file with statistics.
+    
+    Args:
+        data (dict): JSON data containing prefixes
+        filename (str): Output filename
+        description (str): Description for the header
+    """
+    ipv4_cidrs = []
+    ipv6_cidrs = []
+    
+    # Extract IPv4 prefixes
+    for entry in data.get('prefixes', []):
+        ipv4_cidrs.append(entry['ip_prefix'])
+    
+    # Extract IPv6 prefixes
+    for entry in data.get('ipv6_prefixes', []):
+        ipv6_cidrs.append(entry['ipv6_prefix'])
+    
+    # Sort separately
+    ipv4_cidrs.sort(key=lambda x: IPv4Network(x))
+    ipv6_cidrs.sort(key=lambda x: IPv6Network(x))
+    
+    # Write to file with header
+    with open(filename, 'w') as f:
+        # Write header with statistics
+        f.write(f"# AWS IP Ranges - {description}\n")
+        f.write(f"# Generated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}\n")
+        f.write(f"# Source: {AWS_IP_RANGES_URL}\n")
+        f.write(f"# Creation Date: {data.get('createDate', 'Unknown')}\n")
+        f.write(f"# Sync Token: {data.get('syncToken', 'Unknown')}\n")
+        f.write(f"#\n")
+        f.write(f"# Statistics:\n")
+        f.write(f"# Total CIDR blocks: {len(ipv4_cidrs) + len(ipv6_cidrs)}\n")
+        f.write(f"# IPv4 blocks: {len(ipv4_cidrs)}\n")
+        f.write(f"# IPv6 blocks: {len(ipv6_cidrs)}\n")
+        f.write(f"#\n")
+        f.write(f"# ========== IPv4 Prefixes ({len(ipv4_cidrs)} entries) ==========\n")
+        f.write("#\n")
+        
+        # Write IPv4 prefixes
+        for cidr in ipv4_cidrs:
+            f.write(f"{cidr}\n")
+        
+        # Separator and IPv6 header
+        f.write("\n")
+        f.write(f"# ========== IPv6 Prefixes ({len(ipv6_cidrs)} entries) ==========\n")
+        f.write("#\n")
+        
+        # Write IPv6 prefixes
+        for cidr in ipv6_cidrs:
+            f.write(f"{cidr}\n")
+    
+    print(f"Successfully created {filename} (IPv4: {len(ipv4_cidrs)}, IPv6: {len(ipv6_cidrs)})")
+
+def print_reduction_stats(original_data, compacted_data, merged_data):
+    """
+    Print reduction statistics comparing the three approaches.
+    """
+    original_ipv4 = len(original_data.get('prefixes', []))
+    original_ipv6 = len(original_data.get('ipv6_prefixes', []))
+    original_total = original_ipv4 + original_ipv6
+    
+    compacted_ipv4 = len(compacted_data.get('prefixes', []))
+    compacted_ipv6 = len(compacted_data.get('ipv6_prefixes', []))
+    compacted_total = compacted_ipv4 + compacted_ipv6
+    
+    merged_ipv4 = len(merged_data.get('prefixes', []))
+    merged_ipv6 = len(merged_data.get('ipv6_prefixes', []))
+    merged_total = merged_ipv4 + merged_ipv6
+    
+    print("\n========== Reduction Statistics ==========")
+    print(f"Original:  {original_total:,} total ({original_ipv4:,} IPv4, {original_ipv6:,} IPv6)")
+    print(f"Compacted: {compacted_total:,} total ({compacted_ipv4:,} IPv4, {compacted_ipv6:,} IPv6)")
+    print(f"           Reduction: {(1 - compacted_total/original_total)*100:.1f}%")
+    print(f"Merged:    {merged_total:,} total ({merged_ipv4:,} IPv4, {merged_ipv6:,} IPv6)")
+    print(f"           Reduction: {(1 - merged_total/original_total)*100:.1f}%")
+    print("==========================================\n")
+
 def main():
     """
     Main function to orchestrate the fetching, processing, and output.
@@ -80,6 +276,9 @@ def main():
     with open("ip-ranges-original.json", "w") as f:
         json.dump(raw_data, f, indent=2)
     print("Successfully created ip-ranges-original.json")
+    
+    # Write original data to text file
+    write_txt_file(raw_data, "ip-ranges-original.txt", "Original")
 
     # Extract IPv4 prefixes from the 'prefixes' key.
     ipv4_prefixes = [p['ip_prefix'] for p in raw_data.get('prefixes', [])]
@@ -93,7 +292,7 @@ def main():
     coalesced_ipv6 = coalesce_prefixes(ipv6_prefixes, 6)
 
     # Prepare the output dictionary in the same format as the original.
-    output_data = {
+    compacted_data = {
         'syncToken': raw_data.get('syncToken'),
         'createDate': raw_data.get('createDate'),
         'prefixes': [
@@ -117,14 +316,35 @@ def main():
     }
 
     # Write the compacted data to a JSON file.
-    # The file is saved with the name 'ip-ranges-compacted.json'.
     with open("ip-ranges-compacted.json", "w") as f:
-        # Use indentation for readability in the output file.
-        json.dump(output_data, f, indent=2)
-
+        json.dump(compacted_data, f, indent=2)
     print("Successfully created ip-ranges-compacted.json")
+    
+    # Write compacted data to text file
+    write_txt_file(compacted_data, "ip-ranges-compacted.txt", "Compacted")
+
+    # Create merged version with preserved metadata where possible
+    merged_ipv4 = coalesce_with_metadata(raw_data.get('prefixes', []), 4)
+    merged_ipv6 = coalesce_with_metadata(raw_data.get('ipv6_prefixes', []), 6)
+    
+    merged_data = {
+        'syncToken': raw_data.get('syncToken'),
+        'createDate': raw_data.get('createDate'),
+        'prefixes': merged_ipv4,
+        'ipv6_prefixes': merged_ipv6
+    }
+    
+    # Write the merged data to a JSON file
+    with open("ip-ranges-merged.json", "w") as f:
+        json.dump(merged_data, f, indent=2)
+    print("Successfully created ip-ranges-merged.json")
+    
+    # Write merged data to text file
+    write_txt_file(merged_data, "ip-ranges-merged.txt", "Merged (Metadata Preserved)")
+    
+    # Print reduction statistics
+    print_reduction_stats(raw_data, compacted_data, merged_data)
 
 
 if __name__ == "__main__":
     main()
-
