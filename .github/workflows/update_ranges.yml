@@ -44,8 +44,8 @@ jobs:
         with:
           # The file to commit.
           commit_message: "Update and compact AWS IP ranges"
-          # Only commit if the 'ip-ranges-compacted.json' file has changed.
-          file_pattern: ip-ranges-compacted.json
+          # Only commit json file changes.
+          file_pattern: ip-ranges-*.json
           # Rebase before pushing changes.
           push_options: "--force"
 
