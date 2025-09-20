@@ -1,13 +1,13 @@
 # AWS IP Ranges - Original
-# Generated: 2025-09-19 10:04:25 UTC
+# Generated: 2025-09-20 10:03:54 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2025-09-18-23-28-26
-# Sync Token: 1758238106
+# Creation Date: 2025-09-20-00-08-23
+# Sync Token: 1758326903
 #
 # Statistics:
-# Total CIDR blocks: 13560
+# Total CIDR blocks: 13562
 # IPv4 blocks: 9264
-# IPv6 blocks: 4296
+# IPv6 blocks: 4298
 #
 # ========== IPv4 Prefixes (9264 entries) ==========
 #
@@ -9276,7 +9276,7 @@
 216.244.48.0/20
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (4296 entries) ==========
+# ========== IPv6 Prefixes (4298 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc0:800::/40
@@ -12719,6 +12719,8 @@
 2606:7b40:1b0f:f300::/56
 2606:7b40:1b0f:f400::/56
 2606:7b40:1b0f:f400::/56
+2606:7b40:1b0f:f800::/56
+2606:7b40:1b0f:f800::/56
 2606:7b40:1b0f:f900::/56
 2606:7b40:1b0f:f900::/56
 2606:7b40:1b0f:fa00::/56
