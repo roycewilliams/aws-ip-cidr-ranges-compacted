@@ -1,6 +1,6 @@
 {
-  "syncToken": "1758326903",
-  "createDate": "2025-09-20-00-08-23",
+  "syncToken": "1758590908",
+  "createDate": "2025-09-23-01-28-28",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -6232,12 +6232,6 @@
     },
     {
       "ip_prefix": "23.228.198.0/24",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "23.228.202.0/23",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
