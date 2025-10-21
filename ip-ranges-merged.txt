@@ -1,15 +1,15 @@
 # AWS IP Ranges - Merged (Metadata Preserved)
-# Generated: 2025-10-20 10:05:14 UTC
+# Generated: 2025-10-21 10:05:08 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2025-10-17-23-58-40
-# Sync Token: 1760745520
+# Creation Date: 2025-10-20-18-28-39
+# Sync Token: 1760984919
 #
 # Statistics:
-# Total CIDR blocks: 5128
-# IPv4 blocks: 3230
-# IPv6 blocks: 1898
+# Total CIDR blocks: 5130
+# IPv4 blocks: 3229
+# IPv6 blocks: 1901
 #
-# ========== IPv4 Prefixes (3230 entries) ==========
+# ========== IPv4 Prefixes (3229 entries) ==========
 #
 1.178.1.0/24
 1.178.4.0/23
@@ -24,7 +24,6 @@
 1.178.72.0/21
 1.178.88.0/24
 1.178.89.0/24
-1.178.192.0/24
 3.0.0.0/15
 3.2.0.0/24
 3.2.1.0/24
@@ -3242,7 +3241,7 @@
 216.244.40.0/21
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (1898 entries) ==========
+# ========== IPv6 Prefixes (1901 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc1:8000::/36
@@ -4727,7 +4726,10 @@
 2606:7b40:1b0f:f800::/55
 2606:7b40:1b0f:fa00::/56
 2606:7b40:1b0f:fd00::/56
-2606:7b40:1b10::/48
+2606:7b40:1b10::/44
+2606:7b40:1b20::/43
+2606:7b40:1b40::/42
+2606:7b40:1b80::/44
 2606:7b40:1f00::/40
 2606:7b40:f000:1500::/56
 2606:7b40:f000:1600::/55
