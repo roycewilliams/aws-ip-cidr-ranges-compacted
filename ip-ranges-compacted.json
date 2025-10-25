@@ -1,6 +1,6 @@
 {
-  "syncToken": "1761280706",
-  "createDate": "2025-10-24-04-38-26",
+  "syncToken": "1761347318",
+  "createDate": "2025-10-24-23-08-38",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -99,13 +99,13 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "3.2.96.0/23",
+      "ip_prefix": "3.2.96.0/22",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "3.2.98.0/24",
+      "ip_prefix": "3.2.100.0/24",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -3297,13 +3297,7 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "35.96.48.0/22",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "35.96.52.0/24",
+      "ip_prefix": "35.96.48.0/21",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -15851,13 +15845,13 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2600:f0f0:6120::/47",
+      "ipv6_prefix": "2600:f0f0:6120::/46",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2600:f0f0:6122::/48",
+      "ipv6_prefix": "2600:f0f0:6124::/48",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -17273,7 +17267,7 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2631:1:4c00::/47",
+      "ipv6_prefix": "2631:1:4c00::/48",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -17345,7 +17339,13 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2631:1:4fc0::/48",
+      "ipv6_prefix": "2631:1:4fc0::/47",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2631:1:4fc2::/48",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
