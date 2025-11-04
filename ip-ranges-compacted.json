@@ -1,6 +1,6 @@
 {
-  "syncToken": "1762031308",
-  "createDate": "2025-11-01-21-08-28",
+  "syncToken": "1762237706",
+  "createDate": "2025-11-04-06-28-26",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -2937,12 +2937,6 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "23.228.224.0/19",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
       "ip_prefix": "23.254.0.0/20",
       "region": "other",
       "service": "OTHER",
@@ -3309,7 +3303,13 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "35.96.24.0/21",
+      "ip_prefix": "35.96.24.0/22",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "35.96.28.0/23",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -17483,6 +17483,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2631:0:2::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2631:1:45c0::/48",
       "region": "other",
       "service": "OTHER",
@@ -17591,7 +17597,13 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2631:1:4fc0::/48",
+      "ipv6_prefix": "2631:1:4fc0::/47",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2631:1:4fc2::/48",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
