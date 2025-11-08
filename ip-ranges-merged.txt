@@ -1,13 +1,13 @@
 # AWS IP Ranges - Merged (Metadata Preserved)
-# Generated: 2025-11-07 10:05:02 UTC
+# Generated: 2025-11-08 10:04:34 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2025-11-07-00-28-30
-# Sync Token: 1762475310
+# Creation Date: 2025-11-08-00-18-20
+# Sync Token: 1762561100
 #
 # Statistics:
-# Total CIDR blocks: 5175
+# Total CIDR blocks: 5178
 # IPv4 blocks: 3251
-# IPv6 blocks: 1924
+# IPv6 blocks: 1927
 #
 # ========== IPv4 Prefixes (3251 entries) ==========
 #
@@ -3263,7 +3263,7 @@
 216.244.40.0/21
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (1924 entries) ==========
+# ========== IPv6 Prefixes (1927 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc1:8000::/36
@@ -4730,6 +4730,7 @@
 2606:7b40:1b09::/55
 2606:7b40:1b09:200::/56
 2606:7b40:1b0c::/55
+2606:7b40:1b0c:200::/56
 2606:7b40:1b0c:4000::/56
 2606:7b40:1b0c:c000::/56
 2606:7b40:1b0d::/56
@@ -4896,6 +4897,7 @@
 2a05:d016::/36
 2a05:d017::/36
 2a05:d018::/35
+2a05:d018:8000::/36
 2a05:d019::/36
 2a05:d01a::/36
 2a05:d01b::/36
@@ -4911,6 +4913,7 @@
 2a05:d026::/36
 2a05:d027::/36
 2a05:d028::/36
+2a05:d028:8000::/36
 2a05:d029::/36
 2a05:d02a::/36
 2a05:d02b::/36
