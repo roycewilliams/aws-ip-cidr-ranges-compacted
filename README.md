@@ -6,8 +6,8 @@ Simple example:
 
 ```
 $ grep '"3.4.8' *json
-ip-ranges-compacted.json:      "ip_prefix": "3.4.8.0/23",
-ip-ranges-merged.json:      "ip_prefix": "3.4.8.0/24",
+ip-ranges-compacted.json:     "ip_prefix": "3.4.8.0/23",
+ip-ranges-merged.json:        "ip_prefix": "3.4.8.0/24",
 ip-ranges-original.json:      "ip_prefix": "3.4.8.0/24",
 ip-ranges-original.json:      "ip_prefix": "3.4.8.0/24",
 ```
