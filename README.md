@@ -18,3 +18,5 @@ The generated files use two different merge strategies:
 
 * -merged: metadata is preserved when it matches; otherwise "other"
 * -compacted: **all** other metadata is ignored and replaced with "other"
+
+Superset list at [https://github.com/femueller/cloud-ip-ranges](https://github.com/femueller/cloud-ip-ranges)
