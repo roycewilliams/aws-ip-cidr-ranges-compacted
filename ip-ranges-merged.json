@@ -1,6 +1,6 @@
 {
-  "syncToken": "1767658707",
-  "createDate": "2026-01-06-00-18-27",
+  "syncToken": "1767748707",
+  "createDate": "2026-01-07-01-18-27",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -106,6 +106,36 @@
     },
     {
       "ip_prefix": "1.178.94.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "1.178.95.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "1.178.100.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "1.178.101.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "1.178.102.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "1.178.103.0/24",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -5704,9 +5734,9 @@
     },
     {
       "ip_prefix": "16.76.0.0/15",
-      "region": "ap-northeast-1",
-      "service": "AMAZON",
-      "network_border_group": "ap-northeast-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ip_prefix": "16.78.0.0/15",
@@ -27635,6 +27665,42 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2600:f0f1:81::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:82::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:83::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:84::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:85::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:4000::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2600:f0f1:4040::/42",
       "region": "other",
       "service": "OTHER",
@@ -27647,7 +27713,37 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2600:f0f1:4100::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:4140::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2600:f0f1:4180::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:41c0::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:4200::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:4240::/42",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -27683,6 +27779,18 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2600:f0f1:43c0::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:4400::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2600:f0f1:4440::/42",
       "region": "other",
       "service": "OTHER",
@@ -27695,6 +27803,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2600:f0f1:44c0::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2600:f0f1:4500::/42",
       "region": "other",
       "service": "OTHER",
@@ -27702,6 +27816,18 @@
     },
     {
       "ipv6_prefix": "2600:f0f1:4540::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:4580::/42",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:4840::/42",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
