@@ -1,6 +1,6 @@
 {
-  "syncToken": "1768979884",
-  "createDate": "2026-01-21-07-18-04",
+  "syncToken": "1769045884",
+  "createDate": "2026-01-22-01-38-04",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -1119,7 +1119,25 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "15.193.32.0/24",
+      "ip_prefix": "15.193.32.0/22",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.193.36.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.193.40.0/21",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.193.48.0/21",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -8175,6 +8193,12 @@
       "network_border_group": "other"
     },
     {
+      "ip_prefix": "104.255.57.176/31",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ip_prefix": "104.255.58.0/32",
       "region": "other",
       "service": "OTHER",
@@ -9508,6 +9532,12 @@
     },
     {
       "ip_prefix": "173.83.220.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "173.83.224.0/22",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -16763,6 +16793,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2600:f0f2:7028::/47",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2600:f0f2:7100::/40",
       "region": "other",
       "service": "OTHER",
@@ -17573,7 +17609,7 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2606:7b40:1b05:c000::/56",
+      "ipv6_prefix": "2606:7b40:1b05:c000::/55",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
