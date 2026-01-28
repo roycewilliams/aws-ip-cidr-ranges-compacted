@@ -1,6 +1,6 @@
 {
-  "syncToken": "1769478484",
-  "createDate": "2026-01-27-01-48-04",
+  "syncToken": "1769556484",
+  "createDate": "2026-01-27-23-28-04",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -5361,6 +5361,18 @@
       "network_border_group": "me-west-1"
     },
     {
+      "ip_prefix": "15.248.160.0/24",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "15.248.161.0/24",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "15.248.168.0/21",
       "region": "sa-west-1",
       "service": "AMAZON",
@@ -6117,7 +6129,7 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "18.96.0.0/22",
+      "ip_prefix": "18.96.0.0/21",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -7831,6 +7843,12 @@
       "region": "eu-central-1",
       "service": "AMAZON",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "35.97.194.0/24",
+      "region": "eu-west-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-1"
     },
     {
       "ip_prefix": "35.111.128.0/21",
@@ -23375,6 +23393,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2406:daf8:800::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2406:daf8:1000::/40",
       "region": "other",
       "service": "OTHER",
@@ -23387,7 +23411,19 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2406:daf8:2800::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2406:daf8:4000::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2406:daf8:4800::/40",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -23411,6 +23447,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2406:daf8:8800::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2406:daf8:9000::/40",
       "region": "other",
       "service": "OTHER",
@@ -23423,6 +23465,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2406:daf8:a800::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2406:daf8:b000::/40",
       "region": "other",
       "service": "OTHER",
@@ -23430,6 +23478,12 @@
     },
     {
       "ipv6_prefix": "2406:daf8:c000::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2406:daf8:c800::/40",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -23448,9 +23502,9 @@
     },
     {
       "ipv6_prefix": "2406:daf9:800::/40",
-      "region": "ap-southeast-5",
-      "service": "AMAZON",
-      "network_border_group": "ap-southeast-5"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2406:daf9:1000::/40",
@@ -23466,9 +23520,9 @@
     },
     {
       "ipv6_prefix": "2406:daf9:2800::/40",
-      "region": "ap-southeast-6",
-      "service": "AMAZON",
-      "network_border_group": "ap-southeast-6"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2406:daf9:4000::/40",
@@ -23478,9 +23532,9 @@
     },
     {
       "ipv6_prefix": "2406:daf9:4800::/40",
-      "region": "ap-southeast-7",
-      "service": "AMAZON",
-      "network_border_group": "ap-southeast-7"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2406:daf9:6000::/40",
@@ -23502,9 +23556,9 @@
     },
     {
       "ipv6_prefix": "2406:daf9:8800::/40",
-      "region": "ap-southeast-1",
-      "service": "AMAZON",
-      "network_border_group": "ap-southeast-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2406:daf9:9000::/40",
@@ -23520,9 +23574,9 @@
     },
     {
       "ipv6_prefix": "2406:daf9:a800::/40",
-      "region": "ap-southeast-1",
-      "service": "AMAZON",
-      "network_border_group": "ap-southeast-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2406:daf9:b000::/40",
@@ -23538,9 +23592,9 @@
     },
     {
       "ipv6_prefix": "2406:daf9:c800::/40",
-      "region": "ap-east-2",
-      "service": "AMAZON",
-      "network_border_group": "ap-east-2"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2406:daf9:e000::/40",
@@ -26207,7 +26261,13 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2600:1ff8:4000::/40",
+      "ipv6_prefix": "2600:1ff8:2c00::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:1ff8:4000::/39",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -26225,7 +26285,19 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2600:1ff8:8000::/40",
+      "ipv6_prefix": "2600:1ff8:7400::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:1ff8:8000::/39",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:1ff8:a400::/40",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -26238,6 +26310,12 @@
     },
     {
       "ipv6_prefix": "2600:1ff8:e000::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:1ff8:ec00::/40",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -26256,9 +26334,9 @@
     },
     {
       "ipv6_prefix": "2600:1ff9:2c00::/40",
-      "region": "us-east-1",
-      "service": "AMAZON",
-      "network_border_group": "us-east-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2600:1ff9:4000::/39",
@@ -26280,9 +26358,9 @@
     },
     {
       "ipv6_prefix": "2600:1ff9:7400::/40",
-      "region": "mx-central-1",
-      "service": "AMAZON",
-      "network_border_group": "mx-central-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2600:1ff9:8000::/39",
@@ -26292,9 +26370,9 @@
     },
     {
       "ipv6_prefix": "2600:1ff9:a400::/40",
-      "region": "ca-west-1",
-      "service": "AMAZON",
-      "network_border_group": "ca-west-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2600:1ff9:c000::/40",
@@ -26310,9 +26388,9 @@
     },
     {
       "ipv6_prefix": "2600:1ff9:ec00::/40",
-      "region": "sa-west-1",
-      "service": "AMAZON",
-      "network_border_group": "sa-west-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2600:1ffa:1000::/40",
@@ -30923,6 +31001,24 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ipv6_prefix": "2631:0:7::/48",
+      "region": "eu-west-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-1"
+    },
+    {
+      "ipv6_prefix": "2631:0:8::/48",
+      "region": "eu-central-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ipv6_prefix": "2631:0:9::/48",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ipv6_prefix": "2631:0:1800::/39",
       "region": "us-west-2",
       "service": "AMAZON",
@@ -32771,6 +32867,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2a05:d078:800::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2a05:d078:1000::/40",
       "region": "other",
       "service": "OTHER",
@@ -32819,6 +32921,12 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2a05:d078:b000::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2a05:d078:c000::/40",
       "region": "other",
       "service": "OTHER",
@@ -32831,10 +32939,16 @@
       "network_border_group": "other"
     },
     {
+      "ipv6_prefix": "2a05:d078:f000::/40",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ipv6_prefix": "2a05:d079:800::/40",
-      "region": "me-west-1",
-      "service": "AMAZON",
-      "network_border_group": "me-west-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2a05:d079:1000::/40",
@@ -32886,9 +33000,9 @@
     },
     {
       "ipv6_prefix": "2a05:d079:b000::/40",
-      "region": "eu-central-1",
-      "service": "AMAZON",
-      "network_border_group": "eu-central-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2a05:d079:c000::/40",
@@ -32904,9 +33018,9 @@
     },
     {
       "ipv6_prefix": "2a05:d079:f000::/40",
-      "region": "eu-central-1",
-      "service": "AMAZON",
-      "network_border_group": "eu-central-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ipv6_prefix": "2a05:d07a:2000::/40",
