@@ -1,6 +1,6 @@
 {
-  "syncToken": "1771372684",
-  "createDate": "2026-02-17-23-58-04",
+  "syncToken": "1771461484",
+  "createDate": "2026-02-19-00-38-04",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -7365,37 +7365,19 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "64.73.192.0/21",
+      "ip_prefix": "64.73.192.0/20",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "64.73.200.0/23",
+      "ip_prefix": "64.73.208.0/23",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "64.73.202.0/25",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "64.73.202.128/26",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "64.73.202.192/27",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "64.73.203.160/27",
+      "ip_prefix": "64.73.213.0/24",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
