@@ -1,5 +1,5 @@
 # AWS IP Ranges - Original
-# Generated: 2026-02-21 10:05:29 UTC
+# Generated: 2026-02-22 10:04:58 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
 # Creation Date: 2026-02-21-01-58-04
 # Sync Token: 1771639084
