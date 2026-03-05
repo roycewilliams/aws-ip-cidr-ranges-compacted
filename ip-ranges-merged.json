@@ -1,6 +1,6 @@
 {
-  "syncToken": "1772584084",
-  "createDate": "2026-03-04-00-28-04",
+  "syncToken": "1772697484",
+  "createDate": "2026-03-05-07-58-04",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -586,6 +586,18 @@
     },
     {
       "ip_prefix": "3.2.100.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "3.2.101.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "3.2.102.0/24",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -2326,6 +2338,18 @@
     },
     {
       "ip_prefix": "15.129.31.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.129.32.0/23",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.129.34.0/23",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -6735,6 +6759,24 @@
       "network_border_group": "other"
     },
     {
+      "ip_prefix": "23.228.212.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "23.228.213.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "23.228.214.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ip_prefix": "23.228.219.0/24",
       "region": "other",
       "service": "OTHER",
@@ -6961,6 +7003,12 @@
       "region": "ap-east-1",
       "service": "AMAZON",
       "network_border_group": "ap-east-1"
+    },
+    {
+      "ip_prefix": "35.34.103.0/24",
+      "region": "ap-northeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-2"
     },
     {
       "ip_prefix": "35.42.0.0/15",
@@ -8395,6 +8443,12 @@
       "region": "ap-south-1",
       "service": "AMAZON",
       "network_border_group": "ap-south-1"
+    },
+    {
+      "ip_prefix": "45.33.169.0/24",
+      "region": "ap-northeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-2"
     },
     {
       "ip_prefix": "45.34.0.0/15",
@@ -15289,6 +15343,18 @@
       "region": "ap-south-1",
       "service": "AMAZON",
       "network_border_group": "ap-south-1"
+    },
+    {
+      "ip_prefix": "69.107.12.112/28",
+      "region": "ap-northeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "69.107.12.128/28",
+      "region": "ap-northeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-2"
     },
     {
       "ip_prefix": "69.230.192.0/18",
@@ -24737,6 +24803,12 @@
       "network_border_group": "ap-east-1"
     },
     {
+      "ipv6_prefix": "2600:1f01:4922::/47",
+      "region": "ap-northeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
       "ipv6_prefix": "2600:1f10:4000::/36",
       "region": "other",
       "service": "OTHER",
@@ -28776,6 +28848,18 @@
     },
     {
       "ipv6_prefix": "2600:f0f0:6124::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:6125::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:6126::/48",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
