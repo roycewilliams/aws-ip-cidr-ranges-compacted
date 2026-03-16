@@ -1,5 +1,5 @@
 # AWS IP Ranges - Merged (Metadata Preserved)
-# Generated: 2026-03-15 10:07:44 UTC
+# Generated: 2026-03-16 10:23:39 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
 # Creation Date: 2026-03-13-21-58-06
 # Sync Token: 1773439086
