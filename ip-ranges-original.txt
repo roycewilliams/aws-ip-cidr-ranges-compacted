@@ -1,13 +1,13 @@
 # AWS IP Ranges - Original
-# Generated: 2026-04-06 10:25:01 UTC
+# Generated: 2026-04-07 10:22:31 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-04-03-23-47-04
-# Sync Token: 1775260024
+# Creation Date: 2026-04-07-05-17-04
+# Sync Token: 1775539024
 #
 # Statistics:
-# Total CIDR blocks: 15353
+# Total CIDR blocks: 15355
 # IPv4 blocks: 10035
-# IPv6 blocks: 5318
+# IPv6 blocks: 5320
 #
 # ========== IPv4 Prefixes (10035 entries) ==========
 #
@@ -10047,7 +10047,7 @@
 216.244.48.0/20
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (5318 entries) ==========
+# ========== IPv6 Prefixes (5320 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc0:800::/40
@@ -14092,6 +14092,8 @@
 2606:7b40:1042::/56
 2606:7b40:1042:3200::/60
 2606:7b40:1042:3200::/60
+2606:7b40:10f4:3220::/60
+2606:7b40:10f4:3220::/60
 2606:7b40:10f8::/46
 2606:7b40:10f8::/46
 2606:7b40:10ff::/59
@@ -14596,8 +14598,8 @@
 2a05:d01a:c03:4a00::/56
 2a05:d01b::/36
 2a05:d01b::/36
-2a05:d01c::/36
-2a05:d01c::/36
+2a05:d01c::/35
+2a05:d01c::/35
 2a05:d01c:4ac:3100::/56
 2a05:d01c:d06:1800::/56
 2a05:d01d::/36
