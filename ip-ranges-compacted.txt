@@ -1,5 +1,5 @@
 # AWS IP Ranges - Compacted
-# Generated: 2026-04-11 10:11:09 UTC
+# Generated: 2026-04-12 10:14:20 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
 # Creation Date: 2026-04-10-23-07-04
 # Sync Token: 1775862424
