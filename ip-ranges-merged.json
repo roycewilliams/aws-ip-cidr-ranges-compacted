@@ -1,6 +1,6 @@
 {
-  "syncToken": "1776450425",
-  "createDate": "2026-04-17-18-27-05",
+  "syncToken": "1776593825",
+  "createDate": "2026-04-19-10-17-05",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -30936,6 +30936,12 @@
     },
     {
       "ipv6_prefix": "2605:b140:9800::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2605:b140:9801::/48",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
