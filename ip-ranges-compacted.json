@@ -1,6 +1,6 @@
 {
-  "syncToken": "1776989825",
-  "createDate": "2026-04-24-00-17-05",
+  "syncToken": "1777057025",
+  "createDate": "2026-04-24-18-57-05",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -9873,43 +9873,13 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "173.83.192.0/22",
+      "ip_prefix": "173.83.192.0/20",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "173.83.196.0/23",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "173.83.198.0/24",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "173.83.200.0/21",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "173.83.208.0/22",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "173.83.212.0/23",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
-    },
-    {
-      "ip_prefix": "173.83.214.0/24",
+      "ip_prefix": "173.83.208.0/21",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -9921,7 +9891,13 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "173.83.220.0/24",
+      "ip_prefix": "173.83.220.0/23",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "173.83.222.0/24",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
