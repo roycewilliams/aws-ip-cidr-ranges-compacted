@@ -1,13 +1,13 @@
 # AWS IP Ranges - Merged (Metadata Preserved)
-# Generated: 2026-04-26 10:17:24 UTC
+# Generated: 2026-04-27 10:40:37 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-04-24-18-57-05
-# Sync Token: 1777057025
+# Creation Date: 2026-04-26-16-57-05
+# Sync Token: 1777222625
 #
 # Statistics:
-# Total CIDR blocks: 5837
+# Total CIDR blocks: 5841
 # IPv4 blocks: 3550
-# IPv6 blocks: 2287
+# IPv6 blocks: 2291
 #
 # ========== IPv4 Prefixes (3550 entries) ==========
 #
@@ -3562,7 +3562,7 @@
 216.244.40.0/21
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (2287 entries) ==========
+# ========== IPv6 Prefixes (2291 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc1:8000::/36
@@ -5188,6 +5188,10 @@
 2605:b140:1000::/48
 2605:b140:9800::/48
 2605:b140:9801::/48
+2605:b140:9802::/48
+2605:b140:9803::/48
+2605:b140:9a00::/48
+2605:b140:9a01::/48
 2606:f40::/39
 2606:f40:400::/39
 2606:f40:800::/40
