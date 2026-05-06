@@ -1,6 +1,6 @@
 {
-  "syncToken": "1777945025",
-  "createDate": "2026-05-05-01-37-05",
+  "syncToken": "1778044025",
+  "createDate": "2026-05-06-05-07-05",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -2505,6 +2505,24 @@
       "network_border_group": "other"
     },
     {
+      "ip_prefix": "15.129.57.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.129.58.0/23",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.129.60.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ip_prefix": "15.134.0.0/15",
       "region": "other",
       "service": "OTHER",
@@ -3340,6 +3358,12 @@
     },
     {
       "ip_prefix": "15.200.0.0/16",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "15.201.1.0/24",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -17773,6 +17797,12 @@
       "region": "eu-central-1",
       "service": "AMAZON",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "104.255.58.236/31",
+      "region": "il-central-1",
+      "service": "AMAZON",
+      "network_border_group": "il-central-1"
     },
     {
       "ip_prefix": "104.255.59.81/32",
