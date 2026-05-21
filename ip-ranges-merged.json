@@ -1,6 +1,6 @@
 {
-  "syncToken": "1779210426",
-  "createDate": "2026-05-19-17-07-06",
+  "syncToken": "1779320226",
+  "createDate": "2026-05-20-23-37-06",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -9196,9 +9196,9 @@
     },
     {
       "ip_prefix": "51.200.0.0/14",
-      "region": "eu-west-2",
-      "service": "AMAZON",
-      "network_border_group": "eu-west-2"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ip_prefix": "51.204.0.0/14",
@@ -15093,13 +15093,19 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "64.73.192.0/21",
+      "ip_prefix": "64.73.192.0/23",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "64.73.200.0/23",
+      "ip_prefix": "64.73.194.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "64.73.196.0/23",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -16156,9 +16162,9 @@
     },
     {
       "ip_prefix": "77.112.0.0/14",
-      "region": "us-east-2",
-      "service": "AMAZON",
-      "network_border_group": "us-east-2"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ip_prefix": "78.12.0.0/14",
@@ -20830,9 +20836,9 @@
     },
     {
       "ip_prefix": "184.192.0.0/11",
-      "region": "us-east-1",
-      "service": "AMAZON",
-      "network_border_group": "us-east-1"
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
     },
     {
       "ip_prefix": "185.42.204.0/22",
@@ -32763,6 +32769,12 @@
       "region": "us-east-1",
       "service": "AMAZON",
       "network_border_group": "us-east-1"
+    },
+    {
+      "ipv6_prefix": "2620:107:4000:8700::/56",
+      "region": "us-east-2",
+      "service": "AMAZON",
+      "network_border_group": "us-east-2"
     },
     {
       "ipv6_prefix": "2620:107:4000:9000::/63",
