@@ -1,8 +1,8 @@
 # AWS IP Ranges - Merged (Metadata Preserved)
-# Generated: 2026-05-31 10:39:45 UTC
+# Generated: 2026-06-01 12:00:01 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-05-29-14-37-06
-# Sync Token: 1780065426
+# Creation Date: 2026-06-01-07-27-04
+# Sync Token: 1780298824
 #
 # Statistics:
 # Total CIDR blocks: 5995
