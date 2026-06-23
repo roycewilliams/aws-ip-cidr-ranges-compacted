@@ -1,13 +1,13 @@
 # AWS IP Ranges - Merged (Metadata Preserved)
-# Generated: 2026-06-22 12:02:29 UTC
+# Generated: 2026-06-23 11:04:13 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-06-20-15-17-05
-# Sync Token: 1781968625
+# Creation Date: 2026-06-22-22-27-05
+# Sync Token: 1782167225
 #
 # Statistics:
-# Total CIDR blocks: 6076
+# Total CIDR blocks: 6078
 # IPv4 blocks: 3659
-# IPv6 blocks: 2417
+# IPv6 blocks: 2419
 #
 # ========== IPv4 Prefixes (3659 entries) ==========
 #
@@ -3671,7 +3671,7 @@
 216.244.40.0/21
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (2417 entries) ==========
+# ========== IPv6 Prefixes (2419 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc1:8000::/36
@@ -5466,6 +5466,7 @@
 2606:7b40:1000:8000::/56
 2606:7b40:1042::/56
 2606:7b40:1042:3200::/60
+2606:7b40:10f4:3200::/60
 2606:7b40:10f4:3220::/60
 2606:7b40:10f4:3280::/60
 2606:7b40:10f4:32a0::/60
@@ -5516,6 +5517,7 @@
 2606:7b40:1a2f:c310::/60
 2606:7b40:1a2f:c320::/59
 2606:7b40:1a3c:330::/60
+2606:7b40:1a3f:4200::/60
 2606:7b40:1a3f:c200::/60
 2606:7b40:1a3f:c310::/60
 2606:7b40:1a3f:c320::/59
