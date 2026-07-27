@@ -1,6 +1,6 @@
 {
-  "syncToken": "1785044226",
-  "createDate": "2026-07-26-05-37-06",
+  "syncToken": "1785136625",
+  "createDate": "2026-07-27-07-17-05",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -8767,6 +8767,12 @@
       "region": "us-east-1",
       "service": "AMAZON",
       "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "45.33.187.0/24",
+      "region": "eu-west-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-1"
     },
     {
       "ip_prefix": "45.34.0.0/15",
@@ -21159,6 +21165,12 @@
       "network_border_group": "other"
     },
     {
+      "ip_prefix": "173.83.223.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
       "ip_prefix": "173.83.224.0/22",
       "region": "other",
       "service": "OTHER",
@@ -21166,6 +21178,12 @@
     },
     {
       "ip_prefix": "173.83.228.0/22",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "173.83.232.0/24",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -32514,6 +32532,12 @@
     },
     {
       "ipv6_prefix": "2605:b140:9905::/48",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2605:b140:9906::/48",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
