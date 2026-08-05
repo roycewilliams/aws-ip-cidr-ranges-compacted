@@ -1,15 +1,15 @@
 # AWS IP Ranges - Original
-# Generated: 2026-08-04 10:52:52 UTC
+# Generated: 2026-08-05 10:50:30 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-08-04-06-17-05
-# Sync Token: 1785824225
+# Creation Date: 2026-08-04-20-07-04
+# Sync Token: 1785874024
 #
 # Statistics:
-# Total CIDR blocks: 16696
-# IPv4 blocks: 10617
-# IPv6 blocks: 6079
+# Total CIDR blocks: 16702
+# IPv4 blocks: 10619
+# IPv6 blocks: 6083
 #
-# ========== IPv4 Prefixes (10617 entries) ==========
+# ========== IPv4 Prefixes (10619 entries) ==========
 #
 1.178.1.0/24
 1.178.1.0/24
@@ -10322,6 +10322,8 @@
 173.83.232.0/24
 173.83.233.0/24
 173.83.233.0/24
+173.83.234.0/23
+173.83.234.0/23
 174.129.0.0/16
 174.129.0.0/16
 175.41.128.0/18
@@ -10629,7 +10631,7 @@
 216.244.48.0/20
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (6079 entries) ==========
+# ========== IPv6 Prefixes (6083 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc0:800::/40
@@ -14884,6 +14886,10 @@
 2600:f0fb:c002::/56
 2600:f0fb:c800::/56
 2600:f0fb:c800::/56
+2600:f0fb:c900::/52
+2600:f0fb:c900::/52
+2600:f0fb:ca00::/52
+2600:f0fb:ca00::/52
 2600:f0fb:e000::/40
 2600:f0fb:e000::/40
 2600:f0fb:e100::/40
