@@ -1,8 +1,8 @@
 # AWS IP Ranges - Compacted
-# Generated: 2026-09-06 10:06:23 UTC
+# Generated: 2026-09-07 10:08:08 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-09-06-07-47-05
-# Sync Token: 1788680825
+# Creation Date: 2026-09-07-07-47-05
+# Sync Token: 1788767225
 #
 # Statistics:
 # Total CIDR blocks: 3869
