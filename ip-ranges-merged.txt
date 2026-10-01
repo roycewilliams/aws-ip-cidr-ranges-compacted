@@ -1,13 +1,13 @@
 # AWS IP Ranges - Merged (Metadata Preserved)
-# Generated: 2026-09-30 10:10:00 UTC
+# Generated: 2026-10-01 10:09:57 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-09-30-08-17-05
-# Sync Token: 1790756225
+# Creation Date: 2026-10-01-08-17-04
+# Sync Token: 1790842624
 #
 # Statistics:
-# Total CIDR blocks: 6496
+# Total CIDR blocks: 6499
 # IPv4 blocks: 3670
-# IPv6 blocks: 2826
+# IPv6 blocks: 2829
 #
 # ========== IPv4 Prefixes (3670 entries) ==========
 #
@@ -3682,7 +3682,7 @@
 216.244.40.0/21
 216.244.48.0/20
 
-# ========== IPv6 Prefixes (2826 entries) ==========
+# ========== IPv6 Prefixes (2829 entries) ==========
 #
 2001:3fc0:800::/40
 2001:3fc1:8000::/36
@@ -5631,8 +5631,10 @@
 2600:f0fb:c800::/48
 2600:f0fb:c900::/51
 2600:f0fb:c900:2000::/52
+2600:f0fb:c900:3000::/52
 2600:f0fb:ca00::/51
 2600:f0fb:ca00:2000::/52
+2600:f0fb:ca01::/52
 2600:f0fb:e000::/40
 2600:f0fb:e100::/40
 2600:f0fb:e200::/40
@@ -6003,6 +6005,7 @@
 2620:107:4000:7800::/56
 2620:107:4000:7a00::/56
 2620:107:4000:7c00::/56
+2620:107:4000:7e00::/56
 2620:107:4000:8001::/64
 2620:107:4000:8002::/64
 2620:107:4000:8004::/64
