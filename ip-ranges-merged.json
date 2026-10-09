@@ -1,6 +1,6 @@
 {
-  "syncToken": "1791443826",
-  "createDate": "2026-10-08-07-17-06",
+  "syncToken": "1791528426",
+  "createDate": "2026-10-09-06-47-06",
   "prefixes": [
     {
       "ip_prefix": "1.178.1.0/24",
@@ -163,12 +163,6 @@
       "region": "GLOBAL",
       "service": "AMAZON",
       "network_border_group": "GLOBAL"
-    },
-    {
-      "ip_prefix": "1.178.86.0/24",
-      "region": "other",
-      "service": "OTHER",
-      "network_border_group": "other"
     },
     {
       "ip_prefix": "1.178.88.0/24",
@@ -6549,7 +6543,19 @@
       "network_border_group": "other"
     },
     {
-      "ip_prefix": "16.15.96.0/22",
+      "ip_prefix": "16.15.96.0/20",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "16.15.112.0/21",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "16.15.120.0/22",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -13642,6 +13648,12 @@
     },
     {
       "ip_prefix": "54.25.82.0/24",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ip_prefix": "54.25.192.0/18",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
@@ -33833,13 +33845,25 @@
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2600:f0fb:ca00::/51",
+      "ipv6_prefix": "2600:f0fb:c900:7000::/52",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
     },
     {
-      "ipv6_prefix": "2600:f0fb:ca00:2000::/52",
+      "ipv6_prefix": "2600:f0fb:c900:8000::/52",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0fb:ca00::/50",
+      "region": "other",
+      "service": "OTHER",
+      "network_border_group": "other"
+    },
+    {
+      "ipv6_prefix": "2600:f0fb:ca00:4000::/52",
       "region": "other",
       "service": "OTHER",
       "network_border_group": "other"
