@@ -1,15 +1,15 @@
 # AWS IP Ranges - Compacted
-# Generated: 2026-11-25 10:05:14 UTC
+# Generated: 2026-11-26 10:05:01 UTC
 # Source: https://ip-ranges.amazonaws.com/ip-ranges.json
-# Creation Date: 2026-11-25-07-17-05
-# Sync Token: 1795591025
+# Creation Date: 2026-11-26-07-17-05
+# Sync Token: 1795677425
 #
 # Statistics:
-# Total CIDR blocks: 4120
-# IPv4 blocks: 1757
+# Total CIDR blocks: 4121
+# IPv4 blocks: 1758
 # IPv6 blocks: 2363
 #
-# ========== IPv4 Prefixes (1757 entries) ==========
+# ========== IPv4 Prefixes (1758 entries) ==========
 #
 1.178.1.0/24
 1.178.4.0/22
@@ -419,6 +419,7 @@
 15.248.198.0/24
 15.248.200.0/26
 15.248.208.0/25
+15.248.208.128/26
 15.249.0.0/16
 15.251.0.0/28
 15.251.0.20/30
